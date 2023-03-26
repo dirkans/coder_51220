@@ -210,7 +210,7 @@ this.eventos.push(evento_nuevo);
 
 
 
-
+/*
 
 
 
@@ -262,3 +262,45 @@ prmanager.addProduct('Pinza ', 'Pinza de puntas', 2000, 'sin imagen', 'pinza4', 
 prmanager.getProductById(1) // Muestra el nombre del producto con ID 1
 prmanager.getProductById(2) // Muestra el nombre del producto con ID 2
 prmanager.getProductById(3) // Arroja error ya que el producto con ID 3 aún no fué ingresado
+
+
+
+*/
+
+
+
+/*
+const dividir = (n1, n2) => {
+  return new Promise((resolve, reject) => {
+    if (n2 !== 0) {
+      resolve(n1 / n2)
+    } else {
+      reject('No se puede dividir por cero')
+    }
+  })
+}
+
+dividir(5,4)
+.then((resultado)=>{
+  console.log(resultado)
+})
+.catch((err)=>{
+  console.log(err)
+})
+.finally(()=>{console.log('Finished')})
+*/
+
+
+
+
+const sumar = (n1,n2) => {
+  return new Promise((resolve,reject)=>{
+    if(n1!==0 && n2!== 0 && (n1+n2)>0){resolve(n1+n2)} else if (n1==0 || n2==0) {reject('Ambos sumandos deben ser distintos a cero')}
+    else if ((n1+n2)<=0){reject('La calculadora solo debe devolver valores positivos')}
+
+  });
+}
+
+sumar(-3,3)
+.then((res)=>{console.log(res)})
+.catch((err)=>{console.log(err)})
