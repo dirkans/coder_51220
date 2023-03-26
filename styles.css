@@ -1,0 +1,54 @@
+/*
+ _____    _____   _____    _  __             _   _    _____ 
+|  __ \  |_   _| |  __ \  | |/ /     /\     | \ | |  / ____|
+| |  | |   | |   | |__) | | ' /     /  \    |  \| | | (___  
+| |  | |   | |   |  _  /  |  <     / /\ \   | . ` |  \___ \ 
+| |__| |  _| |_  | | \ \  | . \   / ____ \  | |\  |  ____) |
+|_____/  |_____| |_|  \_\ |_|\_\ /_/    \_\ |_| \_| |_____/ 
+		   by Pablo Ambrosio
+   Visit http://www.dirkans.com
+   
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@700&display=swap');
+
+body {
+	background-color: black;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Lexend Tera', sans-serif;
+	font-size: 3.5em;
+	color: white;
+	margin-bottom: 0.2em;
+}
+
+p {
+	font-family: verdana;
+	font-size: 1.4em;
+	color: white;
+	margin-top: 0;
+}
+
+.social-links {
+	margin-top: 2em;
+}
+
+.social-links a {
+	display: inline-block;
+	margin: 0 1em;
+}
+
+.social-links img {
+	width: 1.8em;
+	height: 1.8em;
+}
